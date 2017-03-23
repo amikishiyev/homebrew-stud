@@ -6,7 +6,8 @@ class Stud < Formula
   homepage 'https://github.com/bumptech/stud'
   sha256 'ca531d4a7a234d8287b46ec458872cbf693b06df858c865c33a4a327bad20ca6'
 
-  depends_on 'libev'
+  depends_on "libev"
+  depends_on "openssl"
 
   def install
     system "make PREFIX=#{prefix}"
